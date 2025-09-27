@@ -1,0 +1,30 @@
+import java.time.*;
+
+public class Transaction {
+	
+	private String type;  // "Income" or "Expense
+	private String description;
+	private double amount;
+	private LocalDate date;
+	
+	//Constructor
+	public Transaction(String type, String description, double amount) {
+		this.type = type;
+		this.description = description;
+		this.amount = amount;
+	}
+	
+	//Default Constructor
+	public Transaction() {};
+	
+	
+	//Getters
+	public String getType() { return type; }
+	public String getDescription() { return description; }
+	public double getAmount() { return amount; }
+	
+	
+	public String toString() {
+		return String.format("[%s] %-10s | %.2f € | %s", date,type,amount,description);
+	}
+}

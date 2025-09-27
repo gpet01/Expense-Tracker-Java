@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-22">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/User/Desktop/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Desktop/lib/httpasyncclient-4.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Desktop/lib/httpclient-4.5.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Desktop/lib/httpcore-4.4.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Desktop/lib/json-20160810.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Desktop/lib/unirest-java-1.4.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Desktop/lib/httpcore-nio-4.4.15.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

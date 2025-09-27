@@ -1,0 +1,54 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		ToDoList list = new ToDoList();
+		int choice;
+		
+		do {
+			System.out.println("======== TO-DO LIST =======");
+			System.out.println("1. Προσθήκη Task");
+			System.out.println("2. Εμφάνιση Task");
+			System.out.println("3. Διαγραφή Task");
+			System.out.println("4. Ολοκλήρωση Task");
+			System.out.println("0. Έξοδος");
+			choice = scanner.nextInt();
+			scanner.nextLine();
+			
+			switch(choice) {
+				case 1:
+					System.out.println("Γράψε το Task");
+					String title = scanner.nextLine();
+					list.addTask(title);
+					break;
+				
+				case 2:
+					list.listTasks();
+					break;
+				
+				case 3:
+					System.out.println("Δώσε αριθμό task για διαγραφή");
+					int delIndex = scanner.nextInt() -1;
+					list.removeTask(delIndex);
+					break;
+					
+				case 4:
+					System.out.println("Δώσε αριθμό task για ολοκλήρωση");
+					int comIndex = scanner.nextInt() - 1;
+					list.completedTask(comIndex);
+					break;
+					
+				case 0:
+					System.out.println("Αντίο!");
+					
+				default:
+					System.out.println("Μη έγκυρη επιλογή");
+			}
+			
+			} while (choice !=0);
+		}
+
+	}

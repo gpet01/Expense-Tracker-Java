@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class ToDoList {
+
+	private ArrayList<Task> tasks = new ArrayList<Task>();
+	
+	public void addTask(String title) {
+		tasks.add(new Task(title));
+	}
+}

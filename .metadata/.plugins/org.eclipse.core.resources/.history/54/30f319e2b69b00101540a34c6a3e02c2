@@ -1,0 +1,6 @@
+import java.util.*;
+
+public class ExpenseTracker {
+
+	ArrayList<Transaction> transactions = new ArrayList<Transaction>();
+}
